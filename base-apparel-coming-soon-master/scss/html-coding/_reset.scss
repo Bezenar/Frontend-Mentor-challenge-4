@@ -1,0 +1,33 @@
+//______________________________________________________________RESET STANDART BROWSERS STYLES____//
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+input {
+  border: none;
+  outline: none;
+}
+p {
+  margin: 0;
+  padding: 0;
+}

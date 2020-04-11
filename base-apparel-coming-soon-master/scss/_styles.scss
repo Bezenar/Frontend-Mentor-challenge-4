@@ -1,0 +1,163 @@
+.apparel {
+  .leftSide {
+    background-image: url("../images/bg-pattern-desktop.svg"),
+      linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 57.7%;
+    padding: 4rem 0 4rem 10.3rem;
+    @include resp("s") {
+      padding: 0 1.61rem 0 2rem;
+      width: 100%;
+    }
+    .heading {
+      padding-top: 8rem;
+      text-transform: uppercase;
+      font-size: 65px;
+      line-height: 69px;
+      letter-spacing: 17px;
+      @include resp("s") {
+        padding-top: 4.2rem;
+        font-size: 40px;
+        line-height: 41px;
+        text-align: center;
+        letter-spacing: 11px;
+      }
+      div:first-of-type {
+        font-weight: 300;
+        color: $red;
+      }
+      div:nth-of-type(2) {
+        color: $darkRed;
+        font-weight: 600;
+      }
+      div:last-of-type {
+        font-weight: 600;
+        color: $darkRed;
+      }
+    }
+    .text {
+      padding-right: 14rem;
+      padding-top: 1.4rem;
+      line-height: 27px;
+      letter-spacing: 0.5px;
+      color: $red;
+      font-weight: 300;
+      @include resp("s") {
+        text-align: center;
+        padding: 1.1rem 0 0;
+        line-height: 21px;
+      }
+    }
+    .email-field {
+      padding-top: 2.2rem;
+      .content {
+        position: relative;
+        border: 1px solid $red;
+        border-radius: 2rem;
+        padding: 0.9rem 1.4rem 1.1rem;
+        width: 19.5rem;
+        input[type="text"] {
+          font-size: 16px;
+          font-weight: 300;
+          letter-spacing: 1px;
+          word-spacing: 1px;
+          color: $red;
+          border: none;
+          outline: none;
+          @include resp("s") {
+            font-size: 12px;
+            letter-spacing: 1px;
+          }
+          &::placeholder {
+            color: $red;
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+            @include resp("s") {
+              font-size: 12px;
+              letter-spacing: 1px;
+            }
+          }
+        }
+        .error-img {
+          position: absolute;
+          z-index: 1;
+          top: 1rem;
+          right: 7.3rem;
+          @include resp("s") {
+            top: 0.8rem;
+            right: 5rem;
+          }
+          img {
+            width: 1.4rem;
+            height: 1.4rem;
+          }
+        }
+        button[type="submit"] {
+          position: absolute;
+          width: 6.2rem;
+          height: 3.3rem;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          background: $darkPink;
+          border: none;
+          outline: none;
+          border-radius: 2rem;
+          cursor: pointer;
+          @include resp("s") {
+            width: 4rem;
+            height: 2.9rem;
+          }
+          &:hover {
+            transition: all 0.3s linear;
+            box-shadow: 5px 10px 20px -5px $darkRed;
+          }
+          img {
+            width: 1rem;
+            height: 1rem;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+      .error {
+        font-size: 14px;
+        font-weight: 300;
+        padding: 0.5rem 2rem;
+        color: $softRed;
+      }
+    }
+  }
+  .rightSide {
+    width: 42.3%;
+    @include resp("s") {
+      width: 100%;
+    }
+    .large-img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .s-logo {
+    @include resp("s") {
+      padding: 1.9rem 1rem 1.6rem 1.95rem;
+      img {
+        width: 6.5rem;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+//__________-
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

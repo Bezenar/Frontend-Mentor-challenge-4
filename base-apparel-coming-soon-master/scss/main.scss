@@ -1,0 +1,31 @@
+//________________________________________________________________________________IMPORT PARTS____//
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap");
+@import "./html-coding/reset";
+@import "./html-coding/colors";
+@import "./html-coding/resp";
+@import "./html-coding/widths";
+@import "./html-coding/flex";
+@import "./styles";
+//___________________________________________________________________________________VARIABLES____//
+//___________________________________________________________________________________Container____//
+$container-width: 90%;
+$max-container-width: 1366px;
+//___________________________________________________________________________________Container____//
+//_______________________________________________________________________________________Fonts____//
+$mainFont: "Josefin Sans", sans-serif;
+$secondFont: "Times New Roman", Times, serif;
+$fontSize: 16px;
+$mainLineHeight: 20px;
+//_______________________________________________________________________________________Fonts____//
+//___________________________________________________________________________________VARIABLES____//
+body {
+  font-family: $mainFont;
+  font-size: $fontSize;
+  font-weight: normal;
+  line-height: $mainLineHeight;
+}
+.container {
+  width: $container-width;
+  max-width: $max-container-width;
+  margin: 0 auto;
+}
