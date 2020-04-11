@@ -1271,6 +1271,13 @@ p {
 .attribution {
   font-size: 11px;
   text-align: center;
+  background-color: linear-gradient(135deg, #ffffff, #fff5f5);
+}
+
+@media (max-width: 375px) {
+  .attribution {
+    padding: 1rem 0;
+  }
 }
 
 .attribution a {
